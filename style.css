@@ -26,7 +26,8 @@ body {
 }
 
 
-.nav-menu {
+.nav-menu,
+.section2>div>ul {
     list-style: none;
     display: flex;
 }
@@ -91,10 +92,69 @@ body {
     display: block;
 }
 
-.banner1{
+.banner1,
+/* .section1>.right, */
+.section1,
+.section2{
     padding-top: 5px;
     margin: 0px 20px ;
+}
+
+.banner1{
     display: flex;
     justify-content: space-between;
     /* gap: 50%; */
+}
+
+.banner1>.left{
+    display: flex;
+    gap: 20px;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.section1>.left{
+    padding-right: 20px;
+    margin-right: 10px;
+    color: yellowgreen;
+}
+
+.section1>.right{
+    background-color: pink;
+    padding: 25px;
+    border-radius: 1.5rem;
+}
+
+.section2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2>div>ul{
+    gap: 10px;
+}
+
+/* tbody>td{
+    justify-content: center;
+}  */
+
+table .data_checbox{
+    border-radius: 1.5rem;
+    background-color: blue;
+    text-align: center;
+}
+
+tbody .position_profile{
+    display: flex;
+    gap: 0.5rem;
+}
+
+tbody .profile{
+    border: ridge white;
+    border-radius: 50%;
 }
