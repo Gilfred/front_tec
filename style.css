@@ -110,6 +110,13 @@ body {
     gap: 20px;
 }
 
+.paginate{
+    border-radius: 1.5rem;
+    text-align: center;
+    background-color: greenyellow;
+    padding: 5px;
+}
+
 .section1{
     display: flex;
     justify-content: space-between;
@@ -120,13 +127,60 @@ body {
 .section1>.left{
     padding-right: 20px;
     margin-right: 10px;
-    color: yellowgreen;
+}
+
+.first_nomber{
+    font-size: 10rem;
+    /* font-weight: bolder; */
+    color: #333;
+}
+
+button{
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+    height: 30px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.montant{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.qte_fleche{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    /* position: relative; */
+    bottom: 20px;
+    right: 20px;
+}
+
+.fleche{
+    display: inline-block;
+    transform: rotate(-45deg);
+    font-weight: bold   ;
 }
 
 .section1>.right{
+    width: 300px;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
     background-color: pink;
-    padding: 25px;
-    border-radius: 1.5rem;
 }
 
 .section2,
