@@ -25,7 +25,6 @@ body {
     margin-right: 2rem;
 }
 
-
 .nav-menu,
 .section2>div>ul {
     list-style: none;
@@ -102,7 +101,6 @@ body {
 .banner1{
     display: flex;
     justify-content: space-between;
-    /* gap: 50%; */
 }
 
 .banner1>.left{
@@ -131,7 +129,6 @@ body {
 
 .first_nomber{
     font-size: 10rem;
-    /* font-weight: bolder; */
     color: #333;
 }
 
@@ -139,8 +136,7 @@ button{
     background-color: white;
     border: none;
     border-radius: 50%;
-    width: 30px;
-    text-align: center;
+    width: 30px; 
     height: 30px;
     color: black;
     font-weight: bold;
@@ -148,29 +144,34 @@ button{
 }
 
 .montant{
+    display: flex;
+    gap: 4.75rem;
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 20px;
+    padding-top: 25px;
 }
 
 .qte_fleche{
     display: inline-flex;
     align-items: center;
-    gap: 5px;
     color: white;
-    background-color: black;
     border-radius: 20px;
+    border: 1px solid white;
     padding: 5px 10px;
     font-size: 14px;
+    float: right;
     /* position: relative; */
-    bottom: 20px;
-    right: 20px;
 }
 
 .fleche{
     display: inline-block;
-    transform: rotate(-45deg);
-    font-weight: bold   ;
+    transform: rotate(+45deg);
+    font-weight: bold;
+}
+
+.section1>.right>.option_text{
+    display: flex;
+    gap: 65%;
 }
 
 .section1>.right{
@@ -183,9 +184,20 @@ button{
     background-color: pink;
 }
 
-.section2,
-table{
+.section2{
     margin: 30px 20px;
+}
+
+.bordure_filtre{
+    border-radius: 1.5rem;
+    border: 1px solid black;
+    width: 15%;
+    text-align: center;
+}
+
+.les_filtres{
+    width: 30%;
+    height: auto;
 }
 
 .section2{
@@ -197,9 +209,18 @@ table{
     gap: 10px;
 }
 
+table{
+    border-radius: 1.5rem;
+    border: 1px solid black;
+    width: 100%; 
+}
+
 table th,
 table td{
     padding: 5px 55px;  
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
 }
 
 table td{
@@ -208,7 +229,6 @@ table td{
 
 table .data_checbox{
     border-radius: 1.5rem;
-    background-color: blue;
     text-align: center;
 }
 
