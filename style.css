@@ -91,13 +91,14 @@ body {
 }
 
 .banner1,
-/* .section1>.right, */
-.section1{
+.section1,
+.income{
     padding-top: 5px;
     margin: 0px 20px ;
 }
 
 .banner1{
+    margin: 1rem;
     display: flex;
     justify-content: space-between;
 }
@@ -107,11 +108,17 @@ body {
     gap: 20px;
 }
 
+.banner1 .summary{
+    margin-top: 0.7rem;
+}
+
+.banner1 #time_input,
 .paginate{
     border-radius: 1.5rem;
-    text-align: center;
-    background-color: greenyellow;
-    padding: 5px;
+    border: 10px solid gainsboro;
+    width: 70%;
+    padding: 0.5rem 1rem;
+    margin-left: 0.3rem;
 }
 
 .section1{
@@ -126,9 +133,27 @@ body {
     margin-right: 10px;
 }
 
+#selection_option{
+    border: 0.01px solid white;
+    border-radius: 1rem;
+}
+
+.section1 .left>div{
+    display: flex;
+    float: right;
+}
+
+.pourcentage_first_nomber{
+    margin: 2.75rem 0 8rem 3rem;
+}
+
 .first_nomber{
     font-size: 10rem;
     color: #333;
+}
+
+.fleche_nomber{
+    transform: rotate(145deg);
 }
 
 button{
@@ -159,7 +184,6 @@ button{
     padding: 5px 10px;
     font-size: 14px;
     float: right;
-    /* position: relative; */
 }
 
 .fleche{
@@ -194,8 +218,24 @@ button{
     padding: 0.5rem 1rem;
 }
 
+.recherche{
+    position: relative;
+    width: 250px;
+}
+
+.icon{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 100%;
+    margin-right: 10px;
+}
+
 .bordure_filtre,
-.rechercheinput {
+.recherche_input,
+.pourcentage_first_nomber{
     border-radius: 1.5rem;
     border: 1px solid black;
     padding: 0.5rem 1rem;
@@ -225,31 +265,34 @@ button{
 }
 
 table{
-    border-radius: 1.5rem;
-    border: 1px solid black;
-    width: 100%; 
+    border-radius: 1rem;
+    border: none;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 table th,
 table td{
-    padding: 5px 55px;  
+    /* padding: 5px 55px; */
     border-bottom: 1px solid #ddd;
-    padding: 10px;
     text-align: left;
-}
-
-table td{
-    margin: 30px 0;
 }
 
 table .data_checbox{
     border-radius: 1.5rem;
     text-align: center;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 15px;
+    gap: 8px;
+    font-weight: 200px;
+    color: white;
 }
 
 tbody .position_profile{
     display: flex;
-    gap: 0.5rem;
+    gap: 0.75rem;
+    align-items: center;
 }
 
 .position_profile>.right{
@@ -257,6 +300,8 @@ tbody .position_profile{
 }
 
 tbody .profile{
-    border: ridge white;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    object-fit: cover;
 }

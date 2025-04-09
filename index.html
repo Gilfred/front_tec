@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Représentation d'une marcket</title>
 </head>
 <body>
@@ -31,38 +32,49 @@
    
   <div class="banner1">
     <div class="left">
-      <div>
-        Sumary
+      <div class="summary">
+        Summary
       </div>
-      <div>
-        <ul class="nav-menu">
-          <li class="nav-item dropdown">
-            <a href="#" class="paginate">paginate</a>
-            <ul class="dropdown-menu">
-              <li>1</li>
-              <li>2</li>
-            </ul>
-          </li>
-        </ul>
+      <div class="paginate">
+        <label for="">
+          <i class="fa-solid fa-note-sticky"></i>
+          Updated:
+        </label>
+        <select  name="" id="selection_option">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">5</option>
+          <option value="5">5</option>
+        </select>
+      
       </div>
       
     </div>
 
     <div>
-      <form action="">
-        <label for="">Time:</label>
-        <input type="date" placeholder="">
-      </form>
-    </div>
+      <label for="">
+        <i class="fa-solid fa-calendar-days"></i>
+        Time:
+      </label>
+      <input type="date" placeholder="date" id="time_input">
+    </div> 
   </div>
 
-  <div class="section1">
-    <div class="left">
-      <p>
-        income  
-        <span class="first_nomber">$15,459.50</span>
-      </p>
+ <p class="income">
+    income
+  </p> 
+  <div class="section1">  
+   
+    <div>
+      <div class="left">
+      <div>  
+        <div class="first_nomber">$15,459.50</div>
+        <div class="pourcentage_first_nomber"> <span class="fleche_nomber">↑</span> 2.2%</div>
+      </div>
     </div>
+    </div>
+    
     <div class="right">
       <div class="option_text">
         <div>
@@ -98,9 +110,8 @@
     </div>
 
     <div class="recherche">
-      <form action="">
-        <input type="text" placeholder="search" class="rechercheinput">
-      </form>
+      <span class="icon"><i class="fa-brands fa-searchengin fa-beat-fade"></i></span>
+      <input type="text" placeholder="search" class="recherche_input">
     </div>
   </div>
 
@@ -134,7 +145,10 @@
             </div>
           </td>
           <td>#314455</td>
-          <td class="data_checbox" style="background-color: pink;">Done</td>
+          <td class="data_checbox" style="background-color: pink;">
+            <i class="fa-regular fa-circle-check"></i>
+            Done
+          </td>
           <td>Graphic Designer</td>
           <td>$1,000.34</td>
         </tr>
@@ -156,7 +170,10 @@
             </div>
           </td>
           <td>#926482</td>
-          <td class="data_checbox" style="background-color: cornflowerblue;">Cancelled</td>
+          <td class="data_checbox" style="background-color: cornflowerblue;">
+            <i class="far fa-times-circle"></i>
+            Cancelled
+          </td>
           <td>CopyWriter</td>
           <td>$13,533.44</td>
         </tr>
@@ -178,7 +195,10 @@
             </div>
           </td>
           <td>#101104</td>
-          <td class="data_checbox" style="background-color: blue;">In progress</td>
+          <td class="data_checbox" style="background-color: blue;">
+            <i class="fa-solid fa-spinner"></i>
+            In progress
+          </td>
           <td>Illustrator</td>
           <td>$124,000.00</td>
         </tr>
@@ -200,7 +220,10 @@
             </div>
           </td>
           <td>#520462</td>
-          <td class="data_checbox" style="background-color: pink;">Done</td>
+          <td class="data_checbox" style="background-color: pink;">
+            <i class="fa-regular fa-circle-check"></i>
+            Done
+          </td>
           <td>UI/UX designer</td>
           <td>$2,743.28</td>
         </tr>
