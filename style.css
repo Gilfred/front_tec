@@ -17,7 +17,6 @@ body {
     border-bottom: 1px solid #e5e5e5;
 }
 
-
 .navbar .logo {
     font-size: 1.25rem;
     font-weight: bold;
@@ -188,12 +187,28 @@ button{
     margin: 30px 20px;
 }
 
-.bordure_filtre{
+.filtrage,
+.recherche{
+    border: 1px solid #ddd;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.bordure_filtre,
+.rechercheinput {
     border-radius: 1.5rem;
     border: 1px solid black;
-    width: 15%;
-    text-align: center;
-}
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; 
+    width: fit-content; 
+  }
+
+  .bordure_filtre img{
+    height: 20px;
+  }
 
 .les_filtres{
     width: 30%;
