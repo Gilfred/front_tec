@@ -44,7 +44,7 @@ body {
     padding: 1rem 0;
 }
 
-/* flèche sous-menu */
+/* Flèche sous-menu */
 .nav-item.dropdown .nav-link::after {
     content: '▾';
     font-size: 0.6em;
@@ -52,12 +52,12 @@ body {
     display: inline-block;
 }
 
-/* masquer la flèche pour les items sans sous‑menu */
+/* Masquer la flèche pour les items sans sous‑menu */
 .nav-item:not(.dropdown) .nav-link::after {
     content: none;
 }
 
-/* sous‑menu caché */
+/* Sous‑menu caché */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -85,35 +85,35 @@ body {
     background: #f5f5f5;
 }
 
-/* au survol, on affiche le sous‑menu */
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
 }
 
 .banner1,
 .section1,
-.income{
+.income,
+table {
     padding-top: 5px;
-    margin: 0px 20px ;
+    margin: 0 20px;
 }
 
-.banner1{
+.banner1 {
     margin: 1rem;
     display: flex;
     justify-content: space-between;
 }
 
-.banner1>.left{
+.banner1 > .left {
     display: flex;
     gap: 20px;
 }
 
-.banner1 .summary{
+.banner1 .summary {
     margin-top: 0.7rem;
 }
 
 .banner1 #time_input,
-.paginate{
+.paginate {
     border-radius: 1.5rem;
     border: 10px solid gainsboro;
     width: 70%;
@@ -121,42 +121,42 @@ body {
     margin-left: 0.3rem;
 }
 
-.section1{
+.section1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 2%;
 }
 
-.section1>.left{
+.section1 > .left {
     padding-right: 20px;
     margin-right: 10px;
 }
 
-#selection_option{
+#selection_option {
     border: 0.01px solid white;
     border-radius: 1rem;
 }
 
-.section1 .left>div{
+.section1 .left > div {
     display: flex;
     float: right;
 }
 
-.pourcentage_first_nomber{
+.pourcentage_first_nomber {
     margin: 2.75rem 0 8rem 3rem;
 }
 
-.first_nomber{
+.first_nomber {
     font-size: 10rem;
     color: #333;
 }
 
-.fleche_nomber{
+.fleche_nomber {
     transform: rotate(145deg);
 }
 
-button{
+button {
     background-color: white;
     border: none;
     border-radius: 50%;
@@ -167,7 +167,7 @@ button{
     cursor: pointer;
 }
 
-.montant{
+.montant {
     display: flex;
     gap: 4.75rem;
     font-size: 32px;
@@ -175,7 +175,7 @@ button{
     padding-top: 25px;
 }
 
-.qte_fleche{
+.qte_fleche {
     display: inline-flex;
     align-items: center;
     color: white;
@@ -186,18 +186,18 @@ button{
     float: right;
 }
 
-.fleche{
+.fleche {
     display: inline-block;
     transform: rotate(+45deg);
     font-weight: bold;
 }
 
-.section1>.right>.option_text{
+.section1 > .right > .option_text {
     display: flex;
     gap: 65%;
 }
 
-.section1>.right{
+.section1 > .right {
     width: 300px;
     padding: 20px;
     color: white;
@@ -207,23 +207,26 @@ button{
     background-color: pink;
 }
 
-.section2{
+/*Section 2, filtrage, recherche*/
+.section2 {
     margin: 30px 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .filtrage,
-.recherche{
+.recherche {
     border: 1px solid #ddd;
     border-radius: 1.5rem;
     padding: 0.5rem 1rem;
 }
 
-.recherche{
+.recherche {
     position: relative;
     width: 250px;
 }
 
-.icon{
+.icon {
     position: absolute;
     top: 50%;
     left: 30px;
@@ -235,7 +238,7 @@ button{
 
 .bordure_filtre,
 .recherche_input,
-.pourcentage_first_nomber{
+.pourcentage_first_nomber {
     border-radius: 1.5rem;
     border: 1px solid black;
     padding: 0.5rem 1rem;
@@ -244,27 +247,18 @@ button{
     justify-content: center;
     gap: 0.5rem; 
     width: fit-content; 
-  }
+}
 
-  .bordure_filtre img{
+.bordure_filtre img {
     height: 20px;
-  }
+}
 
-.les_filtres{
+.les_filtres {
     width: 30%;
     height: auto;
 }
 
-.section2{
-    display: flex;
-    justify-content: space-between;
-}
-
-.section2>div>ul{
-    gap: 10px;
-}
-
-table{
+table {
     border-radius: 1rem;
     border: none;
     width: 100%;
@@ -272,36 +266,123 @@ table{
 }
 
 table th,
-table td{
+table td {
     /* padding: 5px 55px; */
     border-bottom: 1px solid #ddd;
     text-align: left;
+    margin-top: 0.3rem;
 }
 
-table .data_checbox{
+table .data_checbox {
     border-radius: 1.5rem;
     text-align: center;
     display: inline-flex;
     align-items: center;
     padding: 5px 15px;
     gap: 8px;
-    font-weight: 200px;
+    font-weight: 200;
     color: white;
 }
 
-tbody .position_profile{
+tbody .position_profile {
     display: flex;
     gap: 0.75rem;
     align-items: center;
 }
 
-.position_profile>.right{
-    padding: 10p5x;
+.position_profile > .right {
+    padding: 10px;
 }
 
-tbody .profile{
+tbody .profile {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+/*MEDIA QUERIES*/
+/* Pour écrans moyens (tablettes) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0 12px;
+  }
+  .navbar .logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .banner1, .section1, .income {
+    margin: 0 10px;
+  }
+  .banner1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .section1 > .right {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .montant {
+    gap: 2rem;
+    font-size: 24px;
+  }
+  .filtrage,
+  .recherche,
+  .bordure_filtre,
+  .recherche_input,
+  .pourcentage_first_nomber {
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+  table th, table td {
+    padding: 8px 10px;
+  }
+}
+
+/* Pour petits écrans (mobiles) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0 8px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner1,
+  .section1,
+  .income {
+    margin: 0 5px;
+  }
+  .section1 > .right {
+    width: 100%;
+    padding: 10px;
+  }
+  .montant {
+    gap: 1rem;
+    font-size: 20px;
+  }
+  .filtrage,
+  .recherche,
+  .bordure_filtre,
+  .recherche_input,
+  .pourcentage_first_nomber {
+    padding: 0.5rem;
+    font-size: 12px;
+  }
+  table th, table td {
+    padding: 6px 5px;
+    font-size: 12px;
+  }
 }
